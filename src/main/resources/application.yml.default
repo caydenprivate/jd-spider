@@ -1,0 +1,16 @@
+spring:
+  datasource:
+    url: jdbc:mysql://localhost:3306/spider?characterEncoding=UTF-8
+    username: root
+    password:
+    driver-class-name: com.mysql.jdbc.Driver
+  redis:
+      host: 127.0.0.1
+      port: 6379
+      database: 0
+mybatis:
+  type-aliases-package: com.cayden.domain
+server:
+  port: 8080
+
+
