@@ -9,7 +9,7 @@ Jd-Spider基于Java爬虫框架[WebMagic](https://github.com/code4craft/webmagic
 ## QuickStart
 
 **爬虫模块环境准备：**
-+ JDK 1.8+
++ JDK 1.7+
 + maven 4.0.0+
 + webmagic 0.7.3+
 + springboot 1.5.7+
@@ -20,7 +20,7 @@ Jd-Spider基于Java爬虫框架[WebMagic](https://github.com/code4craft/webmagic
 **运行爬虫：**
 以爬取京东手机分类为例
 1. 初始化数据库
-在本地MySQL中创建自己的schema，执行初始化数据库的脚本 [`jd-spider/src/main/resources/db.sql`](/db.sql) ，并根据自己的数据库信息修改配置文件 [`jd-spider/src/main/resources/application.yml`](https://github.com/CaydenPrivate/MagicToe/blob/master/hupu-spider/src/main/resources/application.yml) 中的数据源信息。
+在本地MySQL中创建自己的schema，执行初始化数据库的脚本 [`jd-spider/src/main/resources/spider.sql`](https://github.com/caydenprivate/jd-spider/spider.sql) ，并根据自己的数据库信息修改配置文件 [`jd-spider/src/main/resources/application.yml`](https://github.com/caydenprivate/jd-spider/MagicToe/blob/master/hupu-spider/src/main/resources/application.yml) 中的数据源信息。
 2. 启动爬虫
 jdspider通过URL请求的方式运行，在浏览器中键入 **localhost:8080/**（默认端口为8080，如果遇到端口冲突，可以在配置文件 [`jd-spider/src/main/resources/application.yml`](https://github.com/application.yml) 中修改端口），爬虫即可开始运行了。
 3. 爬虫监控
@@ -29,7 +29,5 @@ jdspider通过URL请求的方式运行，在浏览器中键入 **localhost:8080/
 
 
 * 参考及致谢
-  + [[https://github.com/noplay/scrapy-graphite]]
-  + [[https://github.com/gnemoug/distribute_crawler]]
-  + https://github.com/hopsoft/docker-graphite-statsd
-  + [[https://github.com/aivarsk/scrapy-proxies]]
+  + [https://github.com/code4craft/webmagic](https://github.com/code4craft/webmagic)
+  + [https://github.com/CrowHawk/MagicToe](https://github.com/CrowHawk/MagicToe)
